@@ -22,8 +22,7 @@ target_link_libraries(
         ${log-lib}
 )
 
-find_package(cxx REQUIRED CONFIG)
-link_libraries(cxx::cxx)
+# No longer need find_package for libcxx as we use NDK's built-in c++_static
 
 add_library(adbroot SHARED adbroot.cc)
 target_link_libraries(adbroot ${log-lib})

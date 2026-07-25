@@ -4,9 +4,9 @@
 #include <linux/ioctl.h>
 #include <linux/types.h>
 
-#include "uapi/app_profile.h"
-#include "uapi/feature.h"
-#include "uapi/selinux.h"
+#include "../../../../../uapi/app_profile.h"
+#include "../../../../../uapi/feature.h"
+#include "../../../../../uapi/selinux.h"
 
 #define DEFINE_KSU_UAPI_CONST(type, name, val) \
     enum { name = (val) }; \

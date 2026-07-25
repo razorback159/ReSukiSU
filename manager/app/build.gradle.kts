@@ -129,7 +129,7 @@ android {
 
         externalNativeBuild {
             cmake {
-                arguments += "-DANDROID_STL=none"
+                arguments += listOf("-DANDROID_STL=c++_static")
                 cFlags += baseCFlags + "-std=c2x"
                 cppFlags += baseCppFlags + "-std=c++2b"
             }
@@ -245,9 +245,9 @@ dependencies {
     implementation(libs.markdown)
     implementation(libs.androidx.webkit)
 
-    implementation(libs.lsposed.cxx)
+    // implementation(libs.lsposed.cxx)
 
-    implementation(libs.com.github.topjohnwu.libsu.core)
+ //   implementation(libs.com.github.topjohnwu.libsu.core)
 
     implementation(libs.accompanist.drawablepainter)
 
