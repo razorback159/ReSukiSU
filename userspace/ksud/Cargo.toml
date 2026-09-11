@@ -53,7 +53,7 @@ encoding_rs = "0.8"
 humansize = "2"
 libc = "0.2"
 extattr = "1"
-jwalk = "0.8"
+jwalk = "0.9"
 is_executable = "1"
 nom = "8"
 derive-new = "0.7"
@@ -75,4 +75,4 @@ lto = true
 codegen-units = 1
 
 [build-dependencies]
-bindgen = "0.72.1"
+bindgen = "0.73.2"
